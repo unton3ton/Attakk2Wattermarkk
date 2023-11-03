@@ -1,0 +1,13 @@
+A watermark is a logo that stands for watermark and \
+        prevents copying when placed on an image or image. Sometimes \
+        it can be used not as a logo, but as a special text. When \
+        using Watermark, you can block the copy or see the original \
+        author even if there is a copy. Sometimes the site logo and \
+        sometimes different names are placed on the image or in a \
+        blocking corner to create this purpose. The picture above is \
+        an example of a watermark. 
+
+
+Всего символов: 450
+Без пробелов: 361
+Кол-во слов: 90

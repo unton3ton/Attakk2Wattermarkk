@@ -1,0 +1,103 @@
+python DWTextract.py 
+
+            
+Extract text =  watermark #при 100%
+
+            
+Extract text =  waterearj #при 25%, при 26% корректно извлекает
+
+Extract text =  !�X��	�G # передал 100% через телегу (если передавать без сжатия, то всё корректно извлекает)
+
+Extract text =  2�q�Ơ��� # передал 100% через vk (если передавать без сжатия, то всё корректно извлекает)
+
+
+###################################################################################################################################
+
+Extract text =  QR-код содержат сложную информ, чем просто text. Need used специальные форматы data: vCard, iCalendar. # test.jpg после telegram
+
+
+            
+Extract text =  QR-код содержат сложйую информ, чем просто text. Need used специальные форматы data: vCard, iCalendar. # test1.jpg после vk
+
+
+
+$ identify test.jpg 
+test.jpg JPEG 426x284 426x284+0+0 8-bit sRGB 33829B 0.000u 0:00.000
+
+$ identify test1.jpg 
+test1.jpg JPEG 426x284 426x284+0+0 8-bit sRGB 38068B 0.000u 0:00.000
+
+$ identify 1.jpg 
+1.jpg JPEG 2000x1500 2000x1500+0+0 8-bit sRGB 47629B 0.000u 0:00.000
+
+$ identify 1-withText102-DWT.jpeg 
+1-withText102-DWT.jpeg JPEG 2000x1500 2000x1500+0+0 8-bit sRGB 317402B 0.000u 0:00.000
+
+$ identify 1-withText102-DWT.jpg 
+1-withText102-DWT.jpg JPEG 2000x1500 2000x1500+0+0 8-bit sRGB 317402B 0.000u 0:00.000
+
+$ identify 1-withText102-DWT-pinta25.jpg 
+1-withText102-DWT-pinta25.jpg JPEG 2000x1500 2000x1500+0+0 8-bit sRGB 54407B 0.000u 0:00.000
+
+$ identify 1-withText102-DWT-vk.jpg 
+1-withText102-DWT-vk.jpg JPEG 1280x960 1280x960+0+0 8-bit sRGB 212490B 0.000u 0:00.000
+
+$ identify 1-withText102-DWT-telegram.jpg 
+1-withText102-DWT-telegram.jpg JPEG 1280x960 1280x960+0+0 8-bit sRGB 73913B 0.000u 0:00.000
+##############################################################################################################################################
+
+
+$ identify 2.jpg 
+2.jpg JPEG 1280x960 1280x960+0+0 8-bit sRGB 19832B 0.000u 0:00.000
+
+$ identify 2-withText102-DWT.jpeg 
+2-withText102-DWT.jpeg JPEG 1280x960 1280x960+0+0 8-bit sRGB 127230B 0.000u 0:00.000
+
+identify 2-withText102-DWT-from-telega.jpg 
+2-withText102-DWT-from-telega.jpg JPEG 1280x960 1280x960+0+0 8-bit sRGB 87657B 0.000u 0:00.000
+
+$ identify 2-withText102-DWT-from-vk.jpg 
+2-withText102-DWT-from-vk.jpg JPEG 1280x960 1280x960+0+0 8-bit sRGB 151391B 0.000u 0:00.000
+
+
+
+$ identify 3-with-qr-bitrev-Text225-DW
+3-with-qr-bitrev-Text225-DWfrom-telega.jpg  3-with-qr-bitrev-Text225-DWT.jpg
+
+$ identify 3-with-qr-bitrev-Text225-DWT.jpeg 
+3-with-qr-bitrev-Text225-DWT.jpeg JPEG 1280x960 1280x960+0+0 8-bit sRGB 132341B 0.000u 0:00.000
+
+$ identify 3-with-qr-bitrev-Text225-DWfrom-telega.jpg 
+3-with-qr-bitrev-Text225-DWfrom-telega.jpg JPEG 1280x960 1280x960+0+0 8-bit sRGB 90827B 0.000u 0:00.000
+
+$ identify 3-with-qr-bitrev-Text450-DWT.jpeg 
+3-with-qr-bitrev-Text450-DWT.jpeg JPEG 1280x960 1280x960+0+0 8-bit sRGB 131584B 0.000u 0:00.000
+
+$ identify 3-withText450-DWT.jpeg 
+3-withText450-DWT.jpeg JPEG 1280x960 1280x960+0+0 8-bit sRGB 125730B 0.000u 0:00.000
+
+$ identify 3-withText450-DWT-telega.jpg 
+3-withText450-DWT-telega.jpg JPEG 1280x960 1280x960+0+0 8-bit sRGB 86532B 0.000u 0:00.000
+
+$ identify 3-withText450-DWT-vk.jpg 
+3-withText450-DWT-vk.jpg JPEG 1280x960 1280x960+0+0 8-bit sRGB 149832B 0.000u 0:00.000
+
+
+
+$ python entro.py 
+Image Entropy 6.523448000493045 for test2.jpeg
+
+$ python entro.py 
+Image Entropy 6.542801149963303 for removeWM.jpg
+
+$ python entro.py 
+Image Entropy 6.5293142692664725 for controltest-with-qr-bitrev-Text225-DWT.jpeg
+
+$ python entro.py 
+Image Entropy 6.5271218316773165 for telega.jpg
+
+$ python entro.py 
+Image Entropy 6.527621687330413 for vk.jpg
+
+ python entro.py 
+Image Entropy 6.529414883392755 for roter-controltest-with-qr-bitrev-Text225-DWT.jpeg
