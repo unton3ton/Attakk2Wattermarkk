@@ -1,3 +1,10 @@
+![](https://raw.githubusercontent.com/unton3ton/Attakk2Wattermarkk/main/DWT-DCT-SVD-appearance/5.jpeg)
+
+![](https://raw.githubusercontent.com/unton3ton/Attakk2Wattermarkk/main/DWT-DCT-SVD-appearance/5-with-qr-Text1000-DWT.jpeg)
+
+![](https://raw.githubusercontent.com/unton3ton/Attakk2Wattermarkk/main/DWT-DCT-SVD-appearance/5-with-bitrev-qr-Text1000.jpeg)
+
+
 ## Sources
 
 * [Smart WebP, PNG and JPEG compression](https://tinypng.com/)
